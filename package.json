@@ -1,0 +1,11 @@
+{
+  "name": "pageloder",
+  "version": "1.0.0",
+  "description": "PageLoader is a command–line utility that downloads pages from the Internet and saves them on your computer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kozlov Nikita",
+  "license": "ISC"
+}
