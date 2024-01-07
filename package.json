@@ -9,7 +9,10 @@
   },
   "bin": {
     "pageloader": "./bin/pageLoader.js"
-  }, 
+  },
   "author": "Kozlov Nikita",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
 }
