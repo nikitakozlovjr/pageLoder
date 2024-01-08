@@ -50,3 +50,13 @@ test('correct build path', () => {
     expect(result1).toBe(correctPath1);
     expect(result2).toBe(correctPath2);
 });
+
+test('correct write data to file', async () => {
+    const dirname = await fsp.mkdtemp(path.join(os.tmpdir(), 'page-loader-', ));
+    const pathToWrite = path.join(dirname, 'fileToWtite.txt');
+    const data = 'Hello!'
+    await writeData(pathToWrite, data);
+    
+    const checkResult = await fsp.readFile(pathToWrite, 'utf-8');
+    expect(checkResult).toBe(data);
+})
