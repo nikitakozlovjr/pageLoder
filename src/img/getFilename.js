@@ -9,6 +9,4 @@ const getFilename = (src, url = '') => {
     return {extname, firstPathFilename};
 };
 
-console.log(getFilename('/assets/professions/nodejs.png'))
-
 export default getFilename;
